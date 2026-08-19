@@ -1,256 +1,542 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ОГЭ по математике — репетиторство с умом</title><meta name="description" content="Подготовка к ОГЭ по математике: индивидуальные занятия и курс с видеоуроками, тестами и подборками заданий ФИПИ."><link rel="stylesheet" href="style.css"></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Подготовка к ОГЭ по математике без хаоса и зубрёжки: индивидуальные и парные занятия, онлайн-курс, практика на актуальных заданиях ФИПИ." />
+  <meta name="theme-color" content="#63BEEE" />
+  <title>Математика с Айгуль — подготовка к ОГЭ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-<nav class="navbar">
-<div class="container navbar-inner">
-<a href="#home" class="logo">Математика с Айгуль</a>
-<button class="menu-toggle" aria-label="Открыть меню">
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-</button>
-<ul class="nav-list">
-<li><a href="#why-me">Почему я</a></li>
-<li><a href="#lessons">Занятия</a></li>
-<li><a href="#course">Курс</a></li>
-<li><a href="#testimonials">Отзывы</a></li>
-<li><a href="#contact" class="nav-cta">Записаться</a></li>
-</ul>
-</div>
-</nav>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
 
-<div class="floating-cta">
-<a href="#contact" class="btn btn-primary btn-floating">Записаться</a>
-</div>
+  <header class="site-header" id="home">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Математика с Айгуль">
+        <span class="brand-mark">А</span>
+        <span class="brand-text">
+          <strong>Математика с Айгуль</strong>
+          <small>подготовка к ОГЭ</small>
+        </span>
+      </a>
 
-<header class="header" id="home">
-<div class="container hero-grid">
-<div class="hero-content">
-<span class="eyebrow">ОГЭ по математике · индивидуально</span>
-<h1>Готовим к ОГЭ так, чтобы результат был <span class="highlight-text">виден на самом экзамене</span></h1>
-<p class="subtitle">Разбираю критерии оценивания, объясняю теорию простым языком и даю практику именно на те задания, которые встречаются на настоящем ОГЭ.</p>
-<div class="hero-buttons">
-  <a href="#contact" class="btn btn-primary">Записаться на пробный бесплатный урок</a>
-  <a href="#course" class="btn btn-secondary">Узнать о курсе с видеоуроками</a>
-</div>
-</div>
-<div class="hero-photo">
-<div class="hero-photo-placeholder">Айгуль</div>
-<span class="hero-badge">Репетитор по математике</span>
-</div>
-</div>
-</header>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
 
-<section class="stats-bar">
-<div class="container stats-grid">
-<div class="stat-item">
-<span class="stat-number">+10 баллов</span>
-<span class="stat-label">средний рост результата учеников</span>
-</div>
-<div class="stat-item">
-<span class="stat-number">7–9 класс</span>
-<span class="stat-label">сопровождаю по программе</span>
-</div>
-<div class="stat-item">
-<span class="stat-number">1–26</span>
-<span class="stat-label">задания ОГЭ разбираем все</span>
-</div>
-</div>
-</section>
+      <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+        <a href="#method">Как готовимся</a>
+        <a href="#course">Курс</a>
+        <a href="#lessons">Занятия</a>
+        <a href="#about">Обо мне</a>
+        <a href="#reviews">Отзывы</a>
+        <a class="nav-cta" href="#contact">Записаться</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
+  <main id="main">
+    <section class="hero section-pad" aria-labelledby="hero-title">
+      <div class="hero-orb hero-orb-one"></div>
+      <div class="hero-orb hero-orb-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">9 класс · ОГЭ · математика</p>
+          <h1 id="hero-title">Подготовка к ОГЭ по математике <span>без хаоса и зубрёжки</span></h1>
+          <p class="hero-lead">
+            Разбираемся в математике с нуля до понятной системы: восстанавливаем нужную базу,
+            разбираем типы заданий, тренируемся на актуальных материалах ФИПИ и регулярно проверяем прогресс.
+          </p>
 
-<section id="pain" class="section">
-<div class="container">
-<h2 class="section-title">Узнаёте себя?</h2>
-<div class="pain-list">
-<div class="pain-item">
-<span class="pain-icon">✕</span>
-<p>Боишься экзамена и не понимаешь, с чего начать подготовку</p>
-</div>
-<div class="pain-item">
-<span class="pain-icon">✕</span>
-<p>Тема вроде объяснена, но на практике ничего не получается</p>
-</div>
-<div class="pain-item">
-<span class="pain-icon">✕</span>
-<p>Теряешь баллы не из-за незнания темы, а из-за оформления ответа</p>
-</div>
-<div class="pain-item">
-<span class="pain-icon">✕</span>
-<p>Готовишься в одиночку и не с кем свериться, правильно ли решаешь</p>
-</div>
-</div>
-</div>
-</section>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Попробовать бесплатный урок</a>
+            <a class="btn btn-secondary" href="#free-lessons">Получить 7 бесплатных уроков</a>
+          </div>
 
-<section id="how-it-works" class="section section-alt">
-<div class="container">
-<h2 class="section-title">Как это работает</h2>
-<div class="steps-grid">
-<article class="step-card">
-<div class="step-icon">
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2"/>
-<path d="M16 24L22 30L32 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</div>
-<h3>Диагностика</h3>
-<p>Анализ твоих пробных работ — выявляю <strong>повторяющиеся паттерны ошибок</strong>.</p>
-</article>
-<article class="step-card">
-<div class="step-icon">
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2"/>
-<path d="M20 20H28M20 24H28M20 28H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-</svg>
-</div>
-<h3>Адаптация</h3>
-<p>Подбираю задачи и объяснения под <strong>твой стиль мышления</strong>.</p>
-</article>
-<article class="step-card">
-<div class="step-icon">
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2"/>
-<path d="M16 32L20 28L28 36L36 20L40 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</div>
-<h3>Прогресс</h3>
-<p>Чёткая обратная связь и <strong>личный чек-лист</strong> по каждой теме ОГЭ.</p>
-</article>
-</div>
-</div>
-</section>
+          <div class="hero-note">
+            <span class="note-dot"></span>
+            <span>Индивидуально · в паре · самостоятельно на курсе</span>
+          </div>
+        </div>
 
-<section id="why-me" class="section">
-<div class="container">
-<h2 class="section-title">Почему я — не просто ещё один репетитор</h2>
-<div class="why-grid">
-<div class="why-item">
-<div class="why-icon">
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
-<path d="M12 16L16 20L20 16M16 12V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</div>
-<h3>Объясняю так, будто ты уже знаешь</h3>
-<p>Помогаю <strong>вспомнить и соединить то, что уже есть</strong>, а не заучить с нуля.</p>
-</div>
-<div class="why-item">
-<div class="why-icon">
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
-<path d="M12 12L20 20M20 12L12 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-</svg>
-</div>
-<h3>Логика вместо зубрёжки</h3>
-<p>Только <strong>понимание структуры задачи</strong> — как «код», который можно прочитать и изменить.</p>
-</div>
-<div class="why-item">
-<div class="why-icon">
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
-<path d="M16 10V16L20 18M16 22H16.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</div>
-<h3>Фокус на ОГЭ — только реальное</h3>
-<p>Только то, что <strong>встречается в экзамене</strong>: 1–26 задания, типичные ловушки, оформление ответов.</p>
-</div>
-<div class="why-item">
-<div class="why-icon">
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
-<path d="M16 9C12 9 9 12 9 16C9 20 12 23 16 23C20 23 23 20 23 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-<circle cx="16" cy="16" r="2.5" fill="currentColor"/>
-</svg>
-</div>
-<h3>Спокойная атмосфера на занятиях</h3>
-<p>Можно спрашивать «глупые» вопросы и ошибаться — <strong>без спешки и без стыда</strong>.</p>
-</div>
-</div>
-</div>
-</section>
+        <div class="hero-card reveal delay-1" aria-label="Ключевой принцип подготовки">
+          <div class="hero-card-top">
+            <span class="mini-label">Главный принцип</span>
+            <span class="pill">Понимание → практика</span>
+          </div>
+          <div class="hero-card-steps">
+            <div class="hero-step">
+              <span class="step-number">01</span>
+              <div>
+                <strong>Понять</strong>
+                <p>Разобраться, что проверяет задание и какая база нужна.</p>
+              </div>
+            </div>
+            <div class="hero-step">
+              <span class="step-number">02</span>
+              <div>
+                <strong>Натренировать</strong>
+                <p>Закрепить навык на практике и научиться решать самостоятельно.</p>
+              </div>
+            </div>
+            <div class="hero-step">
+              <span class="step-number">03</span>
+              <div>
+                <strong>Проверить</strong>
+                <p>Увидеть прогресс и понять, что ещё требует внимания.</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card-bottom">
+            <span>ФИПИ</span>
+            <span>·</span>
+            <span>обратная связь</span>
+            <span>·</span>
+            <span>пробники</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="lessons" class="section section-alt">
-<div class="container">
-<h2 class="section-title">Индивидуальные занятия</h2>
-<p class="section-intro">Работаем один на один, в удобном для тебя темпе — уже сейчас можно записаться на пробный урок.</p>
-<ul class="features-list">
-<li><svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6667 5L7.5 14.1667L3.33333 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Разбор 10+ реальных вариантов ОГЭ</li>
-<li><svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6667 5L7.5 14.1667L3.33333 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Персональные чек-листы по темам</li>
-<li><svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6667 5L7.5 14.1667L3.33333 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Еженедельные мини-тесты с обратной связью</li>
-<li><svg class="check-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.6667 5L7.5 14.1667L3.33333 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Поддержка в Telegram между занятиями</li>
-</ul>
-<a href="#contact" class="btn btn-primary">Записаться на пробный урок</a>
-</div>
-</section>
+    <section class="recognition section-pad" aria-labelledby="recognition-title">
+      <div class="container narrow">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Знакомая ситуация?</p>
+          <h2 id="recognition-title">Когда математика кажется хаосом</h2>
+          <p>
+            Вроде бы темы знакомые, но в заданиях всё равно легко потеряться.
+            И дело не всегда в способностях к математике.
+          </p>
+        </div>
 
-<section id="course" class="section">
-<div class="container">
-<span class="badge-soon">Скоро</span>
-<h2 class="section-title">Курс с видеоуроками</h2>
-<p class="section-intro">Отдельный формат для самостоятельной подготовки — сейчас в разработке. Можно узнать первым, когда откроется набор.</p>
-<div class="why-grid">
-<div class="why-item">
-<h3>Видеоуроки по каждой теме</h3>
-<p>Объясняю тему коротко и по делу, без лишней теории.</p>
-</div>
-<div class="why-item">
-<h3>Тест сразу после урока</h3>
-<p>Пробуешь решить сам — ответы проверяются автоматически.</p>
-</div>
-<div class="why-item">
-<h3>Задания с сайта ФИПИ</h3>
-<p>После каждой темы — подборка реальных заданий именно по ней.</p>
-</div>
-<div class="why-item">
-<h3>Личная поддержка</h3>
-<p>Можно задать вопрос, если что-то не получилось.</p>
-</div>
-</div>
-<a href="https://t.me/+At8aSMsiBCFkNDhi" class="btn btn-secondary">Узнать первым о запуске курса</a>
-</div>
-</section>
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <span class="problem-icon">01</span>
+            <h3>Непонятно, с чего начать</h3>
+            <p>Открываешь задание и не всегда видишь, какой подход здесь нужен.</p>
+          </article>
+          <article class="problem-card reveal delay-1">
+            <span class="problem-icon">02</span>
+            <h3>Старые темы забылись</h3>
+            <p>Новая задача требует знаний из прошлых классов — и всё снова запутывается.</p>
+          </article>
+          <article class="problem-card reveal delay-2">
+            <span class="problem-icon">03</span>
+            <h3>Информации слишком много</h3>
+            <p>В интернете есть сотни объяснений, но непонятно, что именно нужно тебе и что делать дальше.</p>
+          </article>
+          <article class="problem-card reveal delay-3">
+            <span class="problem-icon">04</span>
+            <h3>Ошибки повторяются</h3>
+            <p>Одни задания получаются, другие снова вызывают трудности, и уверенности не становится больше.</p>
+          </article>
+        </div>
 
-<section id="testimonials" class="section section-alt">
-<div class="container">
-<h2 class="section-title">Отзывы учеников</h2>
-<div class="testimonials-grid">
-<blockquote class="testimonial">
-<p>&laquo;После 4 занятий перешёл с 12 на 22 балла — теперь решаю 26-е задание. Главное — не «как», а <strong>почему именно так</strong>&raquo;.</p>
-<footer>— Артём, 9 класс</footer>
-</blockquote>
-<blockquote class="testimonial">
-<p>&laquo;Наконец-то поняла, как работают формулы сокращённого умножения — не как правило, а как <strong>логическая цепочка</strong>&raquo;.</p>
-<footer>— София, 9 класс</footer>
-</blockquote>
-<blockquote class="testimonial">
-<p>&laquo;Объясняет так, будто знает, где у меня «зависает» мысль. Ни разу не сказал «это очевидно» — и это <strong>самое ценное</strong>&raquo;.</p>
-<footer>— Максим, 9 класс</footer>
-</blockquote>
-</div>
-</div>
-</section>
+        <div class="callout reveal">
+          <strong>Проблема не обязательно в способностях.</strong>
+          Часто просто не хватает понятной системы, последовательного объяснения и достаточной практики.
+        </div>
+      </div>
+    </section>
 
-</main>
+    <section class="method section-pad section-tint" id="method" aria-labelledby="method-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Как устроена подготовка</p>
+          <h2 id="method-title">Сначала понять. Потом натренировать.</h2>
+          <p>
+            Мы не просто решаем задания подряд. Разбираемся, из чего складывается решение,
+            какие знания для него нужны и как самостоятельно узнавать знакомый тип задачи.
+          </p>
+        </div>
 
-<footer id="contact" class="footer">
-<div class="container">
-<div class="footer-content">
-<h2 class="footer-title">Готов начать?</h2>
-<p class="footer-text">Напиши мне в Telegram — и получи <strong>бесплатный разбор твоего пробного варианта ОГЭ</strong>.</p>
-<div class="footer-buttons">
-<a href="https://t.me/iwpme" class="btn btn-telegram" target="_blank" rel="noopener">
-<svg class="telegram-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.5 12.5L11 14.5L16.5 10.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-Записаться на урок
-</a>
-<a href="https://t.me/+At8aSMsiBCFkNDhi" class="btn btn-secondary-inverted" target="_blank" rel="noopener">Узнать о курсе</a>
-</div>
-</div>
-</div>
-</footer>
-<script src="script.js"></script>
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <span class="step-index">01</span>
+            <h3>Разбираемся в теме</h3>
+            <p>Восстанавливаем необходимую школьную базу и связываем её с заданиями ОГЭ.</p>
+          </article>
+          <article class="step-card reveal delay-1">
+            <span class="step-index">02</span>
+            <h3>Понимаем тип задания</h3>
+            <p>Учимся замечать, что именно проверяет задача и какой подход к ней нужен.</p>
+          </article>
+          <article class="step-card reveal delay-2">
+            <span class="step-index">03</span>
+            <h3>Отрабатываем навык</h3>
+            <p>После объяснения решаем похожие задачи и закрепляем способ решения на практике.</p>
+          </article>
+          <article class="step-card reveal delay-3">
+            <span class="step-index">04</span>
+            <h3>Разбираем ошибки</h3>
+            <p>Если что-то не получается, возвращаемся к нужной теме и пробуем другой способ объяснения.</p>
+          </article>
+          <article class="step-card reveal">
+            <span class="step-index">05</span>
+            <h3>Проверяем прогресс</h3>
+            <p>Регулярно решаем пробники и смотрим, какие задания уже получаются уверенно, а где нужна практика.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contrast section-pad" aria-labelledby="contrast-title">
+      <div class="container contrast-grid">
+        <div class="contrast-heading reveal">
+          <p class="eyebrow">Почему не только варианты</p>
+          <h2 id="contrast-title">Можно решить много вариантов. Но этого не всегда достаточно.</h2>
+        </div>
+        <div class="contrast-copy reveal delay-1">
+          <p>
+            Если просто решать задания одно за другим, легко запомнить отдельные алгоритмы —
+            и растеряться, когда формулировка немного изменится или встретится забытая тема.
+          </p>
+          <p>
+            Поэтому мы сначала разбираемся, <strong>как устроен тип задания и какая база за ним стоит</strong>,
+            а затем тренируемся на практике.
+          </p>
+          <p>
+            Варианты нужны — но как способ проверить результат, а не как единственный способ подготовки.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="course section-pad section-dark" id="course" aria-labelledby="course-title">
+      <div class="container">
+        <div class="course-top reveal">
+          <div>
+            <p class="eyebrow eyebrow-light">Главный масштабируемый продукт</p>
+            <h2 id="course-title">Онлайн-курс по математике для подготовки к ОГЭ</h2>
+            <p class="course-lead">
+              Система подготовки, в которой понятно, что изучать, как это отрабатывать и куда двигаться дальше.
+            </p>
+          </div>
+          <div class="course-badge">7 уроков<br /><span>бесплатно</span></div>
+        </div>
+
+        <div class="course-grid">
+          <article class="course-feature reveal">
+            <div class="feature-icon">01</div>
+            <h3>Видеоуроки</h3>
+            <p>Разбираем типы заданий и необходимую теорию понятным языком.</p>
+          </article>
+          <article class="course-feature reveal delay-1">
+            <div class="feature-icon">02</div>
+            <h3>Проверка после урока</h3>
+            <p>После темы — тест в Google Forms с автоматической проверкой. Сразу видно, где ошибка.</p>
+          </article>
+          <article class="course-feature reveal delay-2">
+            <div class="feature-icon">03</div>
+            <h3>Актуальная практика</h3>
+            <p>Подборка заданий из открытого банка ФИПИ, собранная и структурированная по теме.</p>
+          </article>
+          <article class="course-feature reveal delay-3">
+            <div class="feature-icon">04</div>
+            <h3>Необходимая база</h3>
+            <p>Если для решения нужны знания из предыдущих классов, возвращаем их именно тогда, когда они нужны.</p>
+          </article>
+          <article class="course-feature reveal">
+            <div class="feature-icon">05</div>
+            <h3>Постепенное усложнение</h3>
+            <p>Сначала разбираемся в способе решения, затем закрепляем навык и переходим к следующим типам.</p>
+          </article>
+        </div>
+
+        <div class="free-lessons" id="free-lessons">
+          <div class="free-lessons-copy reveal">
+            <p class="eyebrow eyebrow-light">Попробуй, прежде чем покупать</p>
+            <h3>7 бесплатных видеоуроков по заданиям 1–5</h3>
+            <p>
+              Посмотри, как устроено объяснение, выполни практику и оцени, подходит ли тебе такой формат подготовки.
+            </p>
+          </div>
+          <div class="free-lessons-action reveal delay-1">
+            <a class="btn btn-light" href="#contact">Получить бесплатные уроки</a>
+            <small>Ссылка на материалы будет добавлена позже</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lessons section-pad" id="lessons" aria-labelledby="lessons-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Формат с преподавателем</p>
+          <h2 id="lessons-title">Индивидуальные занятия</h2>
+          <p>Когда нужна персональная работа с преподавателем и возможность подстроить темп под себя.</p>
+        </div>
+
+        <div class="lesson-highlight reveal">
+          <div class="lesson-price">1000 ₽ <span>за занятие</span></div>
+          <p>Подготовка к ОГЭ · регулярная работа · домашнее задание · проверка · обратная связь</p>
+          <a class="btn btn-primary" href="#contact">Попробовать бесплатный урок</a>
+        </div>
+
+        <div class="feature-list-grid">
+          <article class="feature-list-card reveal">
+            <span class="check">✓</span>
+            <div>
+              <h3>Разбираем непонятное</h3>
+              <p>Если одного объяснения недостаточно, меняем способ, приводим другой пример или возвращаемся на шаг назад.</p>
+            </div>
+          </article>
+          <article class="feature-list-card reveal delay-1">
+            <span class="check">✓</span>
+            <div>
+              <h3>Закрываем пробелы</h3>
+              <p>Если для новой темы не хватает знаний из прошлых классов, восстанавливаем нужную базу.</p>
+            </div>
+          </article>
+          <article class="feature-list-card reveal delay-2">
+            <span class="check">✓</span>
+            <div>
+              <h3>Много практикуемся</h3>
+              <p>После объяснения ты решаешь сам, а я помогаю исправить ошибки и закрепить способ решения.</p>
+            </div>
+          </article>
+          <article class="feature-list-card reveal delay-3">
+            <span class="check">✓</span>
+            <div>
+              <h3>Есть поддержка</h3>
+              <p>Если во время самостоятельной работы возникает вопрос или что-то не получается, можно обратиться за помощью.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pair section-pad section-tint" aria-labelledby="pair-title">
+      <div class="container pair-grid">
+        <div class="pair-copy reveal">
+          <p class="eyebrow">Занятия вместе</p>
+          <h2 id="pair-title">Позови друга — будем разбираться в математике вместе</h2>
+          <p>
+            Можно заниматься не одному, а вместе с другом или одноклассником. Так подготовка становится комфортнее и интереснее:
+            вы проходите темы вместе, решаете задания и можете сравнивать свои решения.
+          </p>
+          <p class="pair-important"><strong>Важно:</strong> у вас должен быть примерно одинаковый уровень знаний — так мы сможем двигаться в одном темпе.</p>
+          <a class="btn btn-primary" href="#contact">Привести друга на пробный урок</a>
+        </div>
+
+        <div class="pair-card reveal delay-1">
+          <div class="pair-avatar-row" aria-hidden="true">
+            <div class="avatar">А</div>
+            <div class="plus">+</div>
+            <div class="avatar avatar-alt">Б</div>
+          </div>
+          <h3>Вместе, но с вниманием к каждому</h3>
+          <ul class="plain-list">
+            <li><span>✓</span> общая программа и темп</li>
+            <li><span>✓</span> возможность задавать вопросы</li>
+            <li><span>✓</span> совместное решение и сравнение подходов</li>
+            <li><span>✓</span> комфортный формат для друзей и одноклассников</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-photo reveal" aria-label="Фотография Айгуль">
+          <div class="photo-placeholder">Здесь будет<br />фотография</div>
+          <div class="photo-caption">Айгуль · преподаватель математики</div>
+        </div>
+        <div class="about-copy reveal delay-1">
+          <p class="eyebrow">Почему я преподаю именно так</p>
+          <h2 id="about-title">Мне важно не провести урок ради галочки</h2>
+          <p>
+            Я всегда любила математику — во многом благодаря учителям, которые смогли показать её не как набор сложных правил,
+            а как понятную и логичную систему.
+          </p>
+          <p>
+            Поэтому мне важно дать ученику такой же опыт: не просто научить его воспроизводить алгоритмы ради ОГЭ,
+            а помочь разобраться, как устроена задача и почему её можно решить именно так.
+          </p>
+          <p>
+            Если ученик не понял с первого раза, мы пробуем другой способ. Если забыл старую тему — возвращаемся к ней.
+            Если ошибка повторяется — разбираемся, откуда она появилась.
+          </p>
+          <p class="about-final">Мне важно, чтобы в следующий раз ученик смог решить задачу сам.</p>
+        </div>
+      </div>
+
+      <div class="container facts-grid">
+        <div class="fact-card reveal"><strong>КФУ</strong><span>высшее образование</span></div>
+        <div class="fact-card reveal delay-1"><strong>ОГЭ — 5</strong><span>результат по математике</span></div>
+        <div class="fact-card reveal delay-2"><strong>ЕГЭ — 80</strong><span>профильная математика</span></div>
+        <div class="fact-card reveal delay-3"><strong>23+</strong><span>ученика за первый год</span></div>
+      </div>
+    </section>
+
+    <section class="support section-pad section-dark" aria-labelledby="support-title">
+      <div class="container narrow support-inner reveal">
+        <p class="eyebrow eyebrow-light">Поддержка</p>
+        <h2 id="support-title">Тебе не нужно разбираться со всем одному</h2>
+        <p class="support-lead">
+          Ошибаться, забывать и не понимать с первого раза — нормально. Важно, что происходит дальше.
+        </p>
+
+        <div class="support-grid">
+          <div>
+            <h3>Не понял — разбираем ещё раз</h3>
+            <p>Меняем способ объяснения, приводим другой пример или возвращаемся на шаг назад.</p>
+          </div>
+          <div>
+            <h3>Забыл — вспоминаем</h3>
+            <p>Возвращаем нужную базу и связываем её с новой задачей.</p>
+          </div>
+          <div>
+            <h3>Ошибся — разбираемся почему</h3>
+            <p>Не просто исправляем ответ, а ищем причину ошибки и тренируем её избегать.</p>
+          </div>
+          <div>
+            <h3>Застрял дома — можешь спросить</h3>
+            <p>Не обязательно ждать следующего занятия, чтобы разобраться с непонятным местом.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="progress section-pad" aria-labelledby="progress-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Контроль результата</p>
+          <h2 id="progress-title">Подготовка, в которой видно движение вперёд</h2>
+          <p>Важно не только пройти темы, но и увидеть, как это отражается на решении реальных задач.</p>
+        </div>
+
+        <div class="progress-flow">
+          <div class="progress-step reveal"><span>01</span><strong>Тема</strong><small>разобрали</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="progress-step reveal delay-1"><span>02</span><strong>Практика</strong><small>закрепили</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="progress-step reveal delay-2"><span>03</span><strong>Пробник</strong><small>проверили</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="progress-step reveal delay-3"><span>04</span><strong>Анализ</strong><small>нашли слабые места</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="progress-step reveal"><span>05</span><strong>Корректировка</strong><small>двигаемся дальше</small></div>
+        </div>
+
+        <div class="progress-note reveal">
+          <strong>Цель — не просто решить очередной вариант.</strong>
+          А постепенно сделать так, чтобы всё больше заданий ученик решал самостоятельно, уверенно и без лишней потери времени.
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section-pad section-tint" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Пока — примеры текстов для замены</p>
+          <h2 id="reviews-title">Что говорят ученики</h2>
+          <p>Ниже стоят временные отзывы-заглушки. Позже их можно заменить реальными скриншотами и сообщениями.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card reveal">
+            <div class="review-stars">★★★★★</div>
+            <p>«Мне больше всего нравится, что Айгуль не говорит просто “вот формула — запомни”. Если я не понимаю, мы разбираем, откуда всё взялось. В итоге реально начинаю сама решать».</p>
+            <div class="review-author">София, 9 класс</div>
+          </article>
+          <article class="review-card reveal delay-1">
+            <div class="review-stars">★★★★★</div>
+            <p>«До занятий я постоянно путалась, что делать в разных задачах. Сейчас хотя бы понимаю, с чего начать и к какой теме это относится. И самое главное — не страшно спросить, если опять забыла».</p>
+            <div class="review-author">Алина, 9 класс</div>
+          </article>
+          <article class="review-card reveal delay-2">
+            <div class="review-stars">★★★★★</div>
+            <p>«Мне как родителю важно, что ребёнок не просто час отсидел на уроке. Айгуль действительно следит за тем, что ему непонятно, спокойно объясняет и поддерживает».</p>
+            <div class="review-author">Елена, мама ученика 9 класса</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section-pad" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Частые вопросы</h2>
+          <p>Собрала то, что обычно важно узнать перед началом подготовки.</p>
+        </div>
+
+        <div class="faq-list reveal delay-1">
+          <details>
+            <summary>С какого уровня можно начать подготовку к ОГЭ?</summary>
+            <p>С разного. На старте важно понять текущий уровень знаний и определить, какие темы требуют внимания. Если есть пробелы, возвращаемся к необходимой базе и постепенно двигаемся дальше.</p>
+          </details>
+          <details>
+            <summary>Подойдут ли занятия, если математика совсем плохо даётся?</summary>
+            <p>Да. Подготовка начинается с тех знаний, которые уже есть у ученика. Необязательно заранее знать весь материал — важно быть готовым регулярно заниматься и выполнять задания.</p>
+          </details>
+          <details>
+            <summary>Что лучше выбрать: курс или индивидуальные занятия?</summary>
+            <p>Курс подойдёт тем, кто готов самостоятельно проходить материал, выполнять практику и отслеживать свои ошибки. Индивидуальные занятия лучше подойдут тем, кому нужна персональная обратная связь, помощь с конкретными пробелами и возможность менять темп и способ объяснения.</p>
+          </details>
+          <details>
+            <summary>Можно ли заниматься вместе с другом?</summary>
+            <p>Да. Для парных занятий можно пригласить друга или одноклассника. Важно, чтобы ваш уровень подготовки был примерно одинаковым — так вы сможете двигаться в одном темпе.</p>
+          </details>
+          <details>
+            <summary>Откуда берутся задания в курсе?</summary>
+            <p>Для практики используются актуальные задания из открытого банка ФИПИ, собранные и структурированные по темам и типам.</p>
+          </details>
+          <details>
+            <summary>Что происходит, если я не понял тему?</summary>
+            <p>Возвращаемся к ней и пробуем другой способ объяснения. Иногда проблема находится не в самой теме, а в пробеле из предыдущих классов — тогда восстанавливаем необходимую базу.</p>
+          </details>
+          <details>
+            <summary>Как понять, подходит ли мне такой формат?</summary>
+            <p>Для индивидуальных занятий можно начать с бесплатного пробного урока. Для курса доступны 7 бесплатных видеоуроков, чтобы сначала познакомиться с форматом и подачей.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section-pad" id="contact" aria-labelledby="contact-title">
+      <div class="container final-cta-inner reveal">
+        <p class="eyebrow">Первый шаг — бесплатно</p>
+        <h2 id="contact-title">Начни подготовку с первого шага</h2>
+        <p>Не нужно сразу решать, подходит ли тебе весь формат подготовки. Попробуй бесплатно и посмотри, насколько тебе понятен такой подход к математике.</p>
+
+        <div class="cta-columns">
+          <div class="cta-column">
+            <span class="cta-tag">С преподавателем</span>
+            <h3>Хочешь заниматься лично?</h3>
+            <p>Попробуй бесплатный пробный урок и познакомься со мной, форматом занятий и своей текущей точкой подготовки.</p>
+            <a class="btn btn-primary" href="#home" data-action="consultation">Записаться на бесплатный урок</a>
+          </div>
+          <div class="cta-column">
+            <span class="cta-tag">Самостоятельно</span>
+            <h3>Хочешь сначала попробовать курс?</h3>
+            <p>Получи доступ к 7 бесплатным видеоурокам по заданиям 1–5 и самостоятельно оцени формат.</p>
+            <a class="btn btn-secondary" href="#free-lessons" data-action="course">Получить 7 бесплатных уроков</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Математика с Айгуль</strong>
+        <p>Подготовка к ОГЭ по математике</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Наверх</a>
+        <a href="#course">Курс</a>
+        <a href="#lessons">Занятия</a>
+        <a href="#reviews">Отзывы</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
