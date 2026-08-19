@@ -315,8 +315,12 @@ img { max-width: 100%; display: block; }
 
 .about-grid { display: grid; grid-template-columns: .78fr 1.22fr; gap: 70px; align-items: center; }
 .about-photo {
-  min-height: 500px; position: relative; overflow: hidden; border-radius: 28px; background: linear-gradient(145deg, #dff2fb, #eef8fc);
-  border: 1px solid var(--line); display: grid; place-items: center;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  display: block;
+  margin: 20px auto;
+  object-fit: cover;
 }
 .photo-placeholder { text-align: center; color: #6d8796; font-weight: 700; font-size: 22px; line-height: 1.35; }
 .photo-caption { position: absolute; left: 18px; bottom: 18px; padding: 9px 12px; border-radius: 999px; background: rgba(255,255,255,.85); color: #50616d; font-size: 11px; font-weight: 800; }
