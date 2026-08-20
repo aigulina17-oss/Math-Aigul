@@ -1,55 +1,123 @@
-// Mobile menu toggle
-const menuToggle = document.querySelector('.menu-toggle');
-const mainNav = document.querySelector('.main-nav');
+const BOT_TOKEN = "ВСТАВЬ_СЮДА_ТОКЕН_БОТА";
 
-if (menuToggle && mainNav) {
-  menuToggle.addEventListener('click', () => {
-    const isOpen = mainNav.classList.toggle('is-open');
-    menuToggle.classList.toggle('is-open', isOpen);
-    menuToggle.setAttribute('aria-expanded', isOpen);
-    document.body.classList.toggle('menu-open', isOpen);
-  });
+export default {
+  async fetch(request) {
+    try {
+      const update = await request.json();
 
-  // Закрывать меню при клике на любую ссылку
-  mainNav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      mainNav.classList.remove('is-open');
-      menuToggle.classList.remove('is-open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      document.body.classList.remove('menu-open');
-    });
-  });
-}
+      // Проверяем, что сообщение действительно пришло
+      if (!update.message) {
+        return new Response("OK");
+      }
 
-// Плавное появление секций/карточек при скролле
-document.documentElement.classList.add('js');
+      const chatId = update.message.chat.id;
+      const text = update.message.text || "";
 
-const observerOptions = {
-  root: null,
-  rootMargin: '0px 0px -60px 0px',
-  threshold: 0.1
+      // =========================
+      // ПРОБНЫЙ УРОК
+      // =========================
+      if (text === "/start trial") {
+        await sendMessage(
+          chatId,
+          "Привет! 👋\n\nТы хочешь записаться на бесплатный пробный урок.\n\nНажми на кнопку ниже, чтобы написать Айгуль.",
+          {
+            inline_keyboard: [
+              [
+                {
+                  text: "Записаться на пробный урок",
+                  url: "https://t.me/iwpme"
+                }
+              ]
+            ]
+          }
+        );
+
+        return new Response("OK");
+      }
+
+      // =========================
+      // БЕСПЛАТНЫЕ МАТЕРИАЛЫ
+      // =========================
+      if (text === "/start materials") {
+        await sendMessage(
+          chatId,
+          "Привет! 👋\n\nВот твои бесплатные видеоуроки по заданиям 1–5.",
+          {
+            inline_keyboard: [
+              [
+                {
+                  text: "Получить бесплатные видеоуроки",
+                  url: "https://t.me/+At8aSMsiBCFkNDhi"
+                }
+              ]
+            ]
+          }
+        );
+
+        return new Response("OK");
+      }
+
+      // =========================
+      // ОБЫЧНЫЙ /start
+      // =========================
+      if (text === "/start") {
+        await sendMessage(
+          chatId,
+          "Привет! Выбирай:",
+          {
+            inline_keyboard: [
+              [
+                {
+                  text: "Бесплатный пробный урок",
+                  url: "https://t.me/iwpme"
+                }
+              ],
+              [
+                {
+                  text: "Бесплатные видеоуроки 1–5 задание",
+                  url: "https://t.me/+At8aSMsiBCFkNDhi"
+                }
+              ]
+            ]
+          }
+        );
+
+        return new Response("OK");
+      }
+
+      return new Response("OK");
+
+    } catch (error) {
+      return new Response("Ошибка: " + error.message, {
+        status: 500
+      });
+    }
+  }
 };
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('is-visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, observerOptions);
 
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+// =========================
+// ФУНКЦИЯ ОТПРАВКИ СООБЩЕНИЯ
+// =========================
 
-// Плавающая кнопка CTA (если появится на странице — сработает,
-// если элемента нет, просто ничего не делает)
-const floatingCta = document.querySelector('.floating-cta');
-if (floatingCta) {
-  window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 400) {
-      floatingCta.classList.add('visible');
-    } else {
-      floatingCta.classList.remove('visible');
+async function sendMessage(chatId, text, keyboard = null) {
+  const body = {
+    chat_id: chatId,
+    text: text
+  };
+
+  if (keyboard) {
+    body.reply_markup = keyboard;
+  }
+
+  await fetch(
+    `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(body)
     }
-  }, { passive: true });
+  );
 }
